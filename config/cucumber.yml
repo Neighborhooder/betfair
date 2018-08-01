@@ -1,0 +1,13 @@
+qat: &qat >
+  --format pretty
+  --format html --out public/index.html
+  --format junit --out public/
+  --strict
+
+standard: &standard >
+  --format html --out public/index.html
+  --format junit --out features/reports
+
+flat: &flat --format pretty
+
+default: *qat
